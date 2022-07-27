@@ -16,7 +16,8 @@ public class Compute_quotient_and_remainder {
 
 solution -
 give the first number
-1
+111
 give the second number
 2
-first number is now 2.0 and second number is now 1.0
+the quotient is 55 and the remainder is 1
+
