@@ -1,0 +1,82 @@
+Logical operators are used when we want to check the truth value of certain statements. Logical operators help us in checking multiple statements together for their truthness.
+
+Here we will learn logical operators like AND(&&), OR(||), NOT(!). These operators produce either a true or a false as an output.
+
+Example 1:
+
+Input:
+true false
+
+Output:
+false true false
+
+
+Explanation:
+
+true&&false=>false
+
+true||false=>true
+
+!(true) && !(false)=>false
+Example 2:
+
+Input:
+true true
+
+Output:
+true true false
+
+
+Input - 
+
+// { Driver Code Starts
+//Initial Template for Java
+
+/*package whatever //do not write package name here */
+
+import java.io.*;
+import java.util.*;
+
+
+ // } Driver Code Ends
+//User function Template for Java
+
+class Geeks{
+    
+    static void logicOp(boolean a, boolean b){
+       boolean x = a && b;
+       boolean y = a || b;
+       boolean z = !(a) && !(b);
+       
+       System.out.print(x + " " + y + " " + z);
+        /*output (a&&b), (a||b), and ((!a)&&(!b))separated by spaces*/
+    }
+}
+
+// { Driver Code Starts.
+
+class GFG {
+	public static void main (String[] args) {
+		
+		//taking input using Scanner class
+		Scanner sc = new Scanner(System.in);
+		
+		//taking total testcases
+		int testcases = sc.nextInt();
+		
+		while(testcases-- > 0){
+		    
+		    //taking the two boolean values
+		    boolean a = sc.nextBoolean();
+		    boolean b = sc.nextBoolean();
+		    
+		    //creating an object of class Geeks
+		    Geeks g = new Geeks();
+		    
+		    //calling the method logicOp() 
+		    //and passing a,b as arguments
+		    g.logicOp(a, b);
+		    System.out.println();
+		}
+	}
+}  // } Driver Code Ends
