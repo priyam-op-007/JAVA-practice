@@ -11,6 +11,9 @@ Output:
 Explanation:
 anth = a + (n-1)d = 5 + (5-1)*2 = 5 + 8 = 13
 
+ Solution -   
+    
+    
 Input - 
 // { Driver Code Starts
 //Initial Template for Java
